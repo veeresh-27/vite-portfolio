@@ -3,7 +3,7 @@ import { Header } from "./components";
 import { Home } from "./pages";
 
 function App() {
-  const [scroll, setScroll] = useState<boolean>();
+  const [scroll, setScroll] = useState<boolean>(true);
   const navbarScroll = () => {
     if (window.scrollY < 120) setScroll(true); 
     else setScroll(false);
