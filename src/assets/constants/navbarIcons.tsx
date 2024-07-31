@@ -60,6 +60,6 @@ export const icons: Icon[] = [
     comp: TwitterIcon,
     position: "right",
     link: "https://twitter.com/veereshrm_27",
-    width: 24,
+    width: 30,
   },
 ];

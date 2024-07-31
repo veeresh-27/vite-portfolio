@@ -20,9 +20,15 @@ export function Home({ showDp = true }: any) {
               {icons.map((ele: Icon) => (
                 <>
                   <HyperLink key={ele.id} link={ele.link} title={ele.displayName}>
-                    <div className="flex gap-3 text-sm md:text-base">
-                      <Svg src={ele.comp} alt={ele.title} width={ele.width} />
-                      {ele.link}
+                    <div className="flex gap-3 text-sm md:text-base items-center">
+                        <div className={`flex w-[36px] items-center justify-center`}>
+                            <Svg src={ele.comp} alt={ele.title} height={ele.width} width={ele.width} />
+                        </div>
+
+
+                            {ele.link}
+
+
                     </div>
                   </HyperLink>
                 </>

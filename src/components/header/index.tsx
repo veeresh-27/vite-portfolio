@@ -1,6 +1,7 @@
 import ProfilePic from "../../assets/images/profilePic.png";
-import { HyperLink, Svg } from "..";
+import {  Svg } from "..";
 import { Icon, icons } from "../../assets/constants/navbarIcons";
+import { Link } from "react-router-dom";
 
 export function Header({ showDp=true }: any) {
   return (
@@ -12,9 +13,9 @@ export function Header({ showDp=true }: any) {
               {icons.map((ele: Icon) => (
                 <>
                   {ele.position === "left" && (
-                    <HyperLink key={ele.id} link={ele.link} title={ele.title}>
+                    <Link key={ele.id} to={ele.link} title={ele.title}>
                       <Svg src={ele.comp} alt={ele.title} width={ele.width} />
-                    </HyperLink>
+                    </Link>
                   )}
                 </>
               ))}
@@ -34,9 +35,9 @@ export function Header({ showDp=true }: any) {
               {icons.map((ele: Icon) => (
                 <>
                   {ele.position === "right" && (
-                    <HyperLink key={ele.id} link={ele.link} title={ele.title}>
+                    <Link key={ele.id} to={ele.link} title={ele.title}>
                       <Svg src={ele.comp} alt={ele.title} width={ele.width} />
-                    </HyperLink>
+                    </Link>
                   )}
                 </>
               ))}
