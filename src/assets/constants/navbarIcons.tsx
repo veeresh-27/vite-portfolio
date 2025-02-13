@@ -36,15 +36,6 @@ export const icons: Icon[] = [
     width: 30,
   },
   {
-    id: 3,
-    displayName: "Hashnode",
-    title: "HashNodeIcon",
-    comp: HashNodeIcon,
-    position: "right",
-    link: "https://veer27.hashnode.dev",
-    width: 30,
-  },
-  {
     id: 4,
     displayName: "LinkedIn",
     title: "LinkedInIcon",
